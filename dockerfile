@@ -7,8 +7,4 @@ RUN apk add --update \
 RUN gem sources --add http://gems.ruby-china.org/ --remove https://rubygems.org/
 RUN gem install bundler
 RUN bundle config build.nokogiri --use-system-libraries
-VOLUME /src
-WORKDIR /src
-EXPOSE 4000
-CMD bundle install && jekyll server -H 0.0.0.0
 
