@@ -7,3 +7,4 @@ RUN apk add --update \
 RUN gem sources --add http://gems.ruby-china.org/ --remove https://rubygems.org/
 RUN gem install bundler
 RUN bundle config build.nokogiri --use-system-libraries
+RUN bundle install
